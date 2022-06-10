@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import './VideoCard.css'
 import VideoHeader from './VideoHeader'
 
-function VideoCard() {
+function VideoCard({ url, likes, shares, channel, avatar, song }) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
   const videoRef = useRef(null)
 
@@ -20,6 +20,7 @@ function VideoCard() {
     <div className='videoCard'>
       <VideoHeader />
       <video ref={videoRef} onClick={onVideoPress} className='videoPlayer' src='http://just-a-random-url.mp4' alt='lol reel' loop />
+      {/* same stuff for footer */}
     </div>
   )
 }
