@@ -3,12 +3,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className='appTop'>
-
+      <div className='top'>
+        <img className='logo' src='https://instagram-image-from-wiki.png' alt='insta' />
+        <h1>Reels</h1>
       </div>
 
-      <div className='appVideos'>
-        
+      <div className='videos'>
+
       </div>
     </div>
   );

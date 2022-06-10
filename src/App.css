@@ -1,0 +1,19 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.top {
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  height: 12vh; /* make the logo smaller cause it's too big lol */
+}
