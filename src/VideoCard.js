@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './VideoCard.css'
+import VideoHeader from './VideoHeader'
 
 function VideoCard() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
@@ -17,7 +18,7 @@ function VideoCard() {
 
   return (
     <div className='videoCard'>
-      
+      <VideoHeader />
       <video ref={videoRef} onClick={onVideoPress} className='videoPlayer' src='http://just-a-random-url.mp4' alt='lol reel' loop />
     </div>
   )
