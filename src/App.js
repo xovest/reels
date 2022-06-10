@@ -1,4 +1,5 @@
 import './App.css';
+import VideoCard from './VideoCard';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       </div>
 
       <div className='videos'>
-
+        <VideoCard />
       </div>
     </div>
   );

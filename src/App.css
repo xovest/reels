@@ -10,10 +10,30 @@ html {
 }
 
 .top {
+  margin-bottom: -150px;
+}
+
+.top > h1 {
   text-align: center;
   color: white;
 }
 
 .logo {
   height: 12vh; /* make the logo smaller cause it's too big lol */
+}
+
+.videos {
+  position: relative;
+  height: 65vh;
+  background-color: white;
+  width: 70%;
+  border-radius: 20%;
+  max-width: 450px;
+  max-height: 1200px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.videos::-webkit-scrollbar {
+  display: none;
 }
